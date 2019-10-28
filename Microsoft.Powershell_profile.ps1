@@ -72,9 +72,9 @@ function global:GetPURGroupMembers([string] $GroupName){
 #$host.ui.rawui.WindowTitle = "$TITLE PS $pwd"
 #$ (Get-Host).UI.RawUI
 #net use B: /d
-#net use B: "\\VSFILE02\HOME-A-E\Gregg.Ciabattoni\My Documents\How-To\PowerShell\"
+#net use B: "\\SERVER\SHARE\USERNAME\My Documents\How-To\PowerShell\"
 if(!(Test-Path "B:\")){
-	New-PSDrive -PSProvider FileSystem -Root "\\VSFILE02\HOME-A-E\Gregg.Ciabattoni\My Documents\How-To\PowerShell\" -Name B
+	New-PSDrive -PSProvider FileSystem -Root "\\SERVER\SHARE\USERNAME\My Documents\How-To\PowerShell\" -Name B
 }
 #clear
 #Set-Location C:
